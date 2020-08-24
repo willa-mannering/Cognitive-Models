@@ -1,4 +1,4 @@
-README
+# Cognitive-Models
 
 Code for various cognitive models written in Python 3.7. Currently includes:
   1. REM model (Retrieving Effectively from Memory) 
