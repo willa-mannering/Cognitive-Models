@@ -47,7 +47,6 @@ class SAM:
         self.context_assoc, self.word_assoc = self.encodeitems()
         
     #method for encoding items
-    #NOTE: presentation order not randomized between group members
     def encodeitems(self):
         import itertools
         
@@ -100,10 +99,9 @@ class SAM:
 
         
         else: #if only context was used, update association between image to context and image to itself
+            
             self.context_assoc[sampledTrace] = self.context_assoc[sampledTrace] + self.sam_e
             self.word_assoc[sampledTrace][sampledTrace] = self.word_assoc[sampledTrace][sampledTrace] + self.sam_g
-
-        
         
     #free recall process 
     def free_recall(self):
