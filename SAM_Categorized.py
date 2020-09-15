@@ -59,7 +59,7 @@ class SAM_Categorized:
         
         studyitems = self.create_categories()
 
-        #initialize context association and word-word association matrices
+        #initialize context association and category-word association matrices
         context_assoc = np.full(self.ListLength, self.sam_a*self.t)
         category_assoc = np.zeros((self.ListLength, self.ListLength))
         
