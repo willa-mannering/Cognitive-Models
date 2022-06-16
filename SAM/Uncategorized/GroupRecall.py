@@ -202,9 +202,7 @@ def run_group_recall(numruns, list_length, group_size):
 
 def main():
     print(run_group_recall(200, 50, 3))
-    # d = run_group_recall(200, 50, 3)
-    # lallowed = pd.Series(d)
-    # lallowed.to_csv('learning_allowed.csv', index=False)
+
 
 if __name__ == "__main__":
     main()  
