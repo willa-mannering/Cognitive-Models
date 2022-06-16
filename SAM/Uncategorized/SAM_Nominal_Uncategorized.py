@@ -13,7 +13,7 @@ import random
 class SAM_Nominal_Uncategorized:
     
     def __init__(self, ListLength, t=2, r=4, sam_a = .1, sam_b = .1, sam_c = .1, 
-                 sam_d = .02, sam_e = 0, sam_f = 0, sam_g = 0, Kmax = 30, Lmax = 3):
+                 sam_d = .02, sam_e = 0.72, sam_f = 0.74, sam_g = 0.72, Kmax = 30, Lmax = 3):
 
         #Parameter settings based on parameter estimation in first paper:
         #sam_e = 0.72, sam_f = 0.74, sam_g = 0.72
@@ -217,12 +217,7 @@ class SAM_Nominal_Uncategorized:
 
         return response
      
-def individual_recall(num_runs, list_length):
-    len_response = []
-    for i in range(num_runs):
-        sam = SAM_Nominal_Uncategorized(list_length)
-        len_response.append(len(sam.free_recall()))
-    return np.mean(len_response)/list_length
+
         
 
  
